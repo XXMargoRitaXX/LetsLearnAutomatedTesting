@@ -6,5 +6,12 @@
             "name": "XXMargoRitaXX"
         }
     ],
-    "require": {}
+    "autoload": {
+        "files": [
+            "src/StringUtils.php"
+        ]
+    },
+    "require": {
+        "webmozart/assert": "^2.3"
+    }
 }
