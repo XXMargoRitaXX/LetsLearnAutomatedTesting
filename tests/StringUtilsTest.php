@@ -6,12 +6,7 @@ require_once(__DIR__ . '/../src/StringUtils.php');
 
 use function LetsLearnAutomatedTesting\StringUtils\capitalize;
 
-if (capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
-
-if (capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
+assert(capitalize('hello') === 'Hello');
+assert(capitalize('') === '');
 
 echo 'Все тесты пройдены!';
