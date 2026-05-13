@@ -2,12 +2,12 @@
 
 namespace LetsLearnAutomatedTesting\StringUtils;
 
-function capitalize(string $text): string
+function capitalize(string $string): string
 {
-    if ($text === '') {
+    if ($string === '') {
         return '';
     }
-    $firstSymbol = mb_strtoupper($text[0]);
-    $restSubstring = mb_substr($text, 1);
+    $firstSymbol = mb_strtoupper($string[0]);
+    $restSubstring = mb_substr($string, 1);
     return "{$firstSymbol}{$restSubstring}";
 }

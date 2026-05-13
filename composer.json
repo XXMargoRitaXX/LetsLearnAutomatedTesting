@@ -11,7 +11,7 @@
             "src/StringUtils.php"
         ]
     },
-    "require": {
+    "require-dev": {
         "webmozart/assert": "^2.3"
     }
 }
