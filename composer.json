@@ -8,10 +8,12 @@
     ],
     "autoload": {
         "files": [
-            "src/StringUtils.php"
+            "src/StringUtils.php",
+            "src/ArrayUtils.php"
         ]
     },
     "require-dev": {
-        "webmozart/assert": "^2.3"
+        "webmozart/assert": "^2.3",
+        "phpunit/phpunit": "^13.0"
     }
 }
