@@ -17,4 +17,4 @@ use function LetsLearnAutomatedTesting\StringUtils\capitalize;
 Assert::eq(capitalize('hello'),'Hello');
 Assert::eq(capitalize(''), '');
 
-echo 'Все тесты пройдены!';
+echo 'Все тесты пройдены!', PHP_EOL;
