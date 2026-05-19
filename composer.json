@@ -9,7 +9,8 @@
     "autoload": {
         "files": [
             "src/StringUtils.php",
-            "src/ArrayUtils.php"
+            "src/ArrayUtils.php",
+            "src/Rectangle.php"
         ]
     },
     "require-dev": {
