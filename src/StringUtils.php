@@ -11,3 +11,8 @@ function capitalize(string $string): string
     $restSubstring = mb_substr($string, 1);
     return "{$firstSymbol}{$restSubstring}";
 }
+
+function reverse(string $string): string
+{
+    return implode(array_reverse(mb_str_split($string)));
+}
