@@ -10,11 +10,15 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use Webmozart\Assert\Assert;
+use PHPUnit\Framework\TestCase;
 
 use function LetsLearnAutomatedTesting\StringUtils\capitalize;
 
-Assert::eq(capitalize('hello'),'Hello');
-Assert::eq(capitalize(''), '');
-
-echo 'Все тесты пройдены!', PHP_EOL;
+class StringUtilsTest extends TestCase
+{
+    public function testCapitalize(): void
+    {
+        $this->assertEquals('Hello', capitalize('hello'));
+        $this->assertEquals('', capitalize(''));
+    }
+}
