@@ -6,6 +6,12 @@
             "name": "XXMargoRitaXX"
         }
     ],
+    "scripts": {
+        "test": [
+            "@putenv XDEBUG_MODE=coverage",
+            "vendor/bin/phpunit -c phpunit.dist.xml"
+        ]
+    },
     "autoload": {
         "files": [
             "src/StringUtils.php",
