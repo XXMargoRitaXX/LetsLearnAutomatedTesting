@@ -1,6 +1,6 @@
 <?php
 
-namespace LetsLearnAutomatedTesting\Rectangle;
+namespace LetsLearnAutomatedTesting\Rectangles;
 
 function calculateRectangleArea(int $length, int $width): ?int
 {

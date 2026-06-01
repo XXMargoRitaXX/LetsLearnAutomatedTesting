@@ -13,11 +13,11 @@ if (file_exists($autoloadPath1)) {
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
-use function LetsLearnAutomatedTesting\Rectangle\calculateRectangleArea;
+use function LetsLearnAutomatedTesting\Rectangles\calculateRectangleArea;
 
-class RectangleTest extends TestCase
+class RectanglesTest extends TestCase
 {
-    #[DataProvider('rectangleProvider')]
+    #[DataProvider('rectanglesProvider')]
     public function testCalculateRectangleArea(
         ?int $expected,
         array $rectangle,
@@ -31,7 +31,7 @@ class RectangleTest extends TestCase
         );
     }
 
-    public static function rectangleProvider(): array
+    public static function rectanglesProvider(): array
     {
         return [
             'correct dimensions' => [25, [5, 5]],
