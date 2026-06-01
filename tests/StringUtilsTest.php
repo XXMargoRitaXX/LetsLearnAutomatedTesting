@@ -15,8 +15,13 @@ use PHPUnit\Framework\TestCase;
 use function LetsLearnAutomatedTesting\StringUtils\capitalize;
 use function LetsLearnAutomatedTesting\StringUtils\reverse;
 
+/* Фикстуры — заранее подготовленные наборы данных, которые 
+используются в тестировании для создания стабильной и предсказуемой 
+среды. */
+
 class StringUtilsTest extends TestCase
 {
+    // Построение пути к фикстуре
     public function getFixtureFullPath(string $fixtureName): string
     {
         $parts = [__DIR__, 'fixtures', $fixtureName];
@@ -38,6 +43,8 @@ class StringUtilsTest extends TestCase
 
         $pathToInputData = $this->getFixtureFullPath('longString.txt');
         $pathToOutputData = $this->getFixtureFullPath('reversedLongString.txt');
+        
+        // Чтение данных из файлов (т.е. использование фикстур)
         $longString = file_get_contents($pathToInputData);
         $reversedLongString = file_get_contents($pathToOutputData);
 

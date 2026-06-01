@@ -18,10 +18,14 @@ use function LetsLearnAutomatedTesting\Players\getPlayer;
 use function LetsLearnAutomatedTesting\Players\listOfPlayers;
 use function LetsLearnAutomatedTesting\Players\updatePlayer;
 
+/* Хуки (англ. hook – крюк, ловушка; подцепить, поймать) – 
+специальные методы, вызываемые фреймворком на определенные события. */
+
 class PlayersTest extends TestCase
 {
     private array $players;
 
+    // setUp() - автоматически вызывается перед каждым тестом
     protected function setUp(): void
     {
         $this->players = [

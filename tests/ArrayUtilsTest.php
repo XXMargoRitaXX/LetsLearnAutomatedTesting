@@ -14,6 +14,11 @@ use PHPUnit\Framework\TestCase;
 
 use function LetsLearnAutomatedTesting\ArrayUtils\without;
 
+/* Утверждение (англ. assertion) – проверка, которая 
+проводится для подтверждения корректности работы программы. 
+Обычно такая проверка заключается в сравнении ожидаемых и 
+фактических значений. */
+
 class ArrayUtilsTest extends TestCase
 {
     public function testWithout(): void
