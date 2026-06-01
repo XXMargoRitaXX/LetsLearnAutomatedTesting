@@ -16,7 +16,8 @@
         "files": [
             "src/StringUtils.php",
             "src/ArrayUtils.php",
-            "src/Rectangles.php"
+            "src/Rectangles.php",
+            "src/Players.php"
         ]
     },
     "require-dev": {
