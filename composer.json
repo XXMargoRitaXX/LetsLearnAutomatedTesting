@@ -1,6 +1,8 @@
 {
     "name": "xxmargoritaxx/lets-learn-automated-testing",
+    "description": "php-package",
     "type": "project",
+    "license": "MIT",
     "authors": [
         {
             "name": "XXMargoRitaXX"
