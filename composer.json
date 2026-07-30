@@ -9,9 +9,13 @@
         }
     ],
     "scripts": {
-        "test": [
+        "test-coverage": [
             "@putenv XDEBUG_MODE=coverage",
-            "vendor/bin/phpunit -c phpunit.dist.xml"
+            "phpunit tests --coverage-text"
+        ],
+        "test-coverage-html": [
+            "@putenv XDEBUG_MODE=coverage",
+            "phpunit tests --coverage-html coverage"
         ]
     },
     "autoload": {

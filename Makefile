@@ -8,7 +8,7 @@ test:
 	composer exec --verbose phpunit tests -- --testdox
 
 test-coverage:
-	composer exec --verbose phpunit tests -- --coverage-html coverage
+	composer test-coverage
 
-test-coverage-text:
-	composer exec --verbose phpunit tests -- --coverage-text
+test-coverage-html:
+	composer test-coverage-html
